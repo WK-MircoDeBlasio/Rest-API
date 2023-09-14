@@ -55,3 +55,23 @@ export async function remove(req: Request, res: Response) {
         return res.status(500).json({ error: "Errore durante la cancellazione del prodotto." });
     }
 }
+
+
+
+
+
+/*
+export async function findMax(req: Request, res: Response) {
+    try {
+        const product: SavedProduct = await ProductModel.findOne(req.params.id);
+
+        if (!product) {
+            return res.status(404).json({ error: "Prodotto non trovato." });
+        }
+        
+        return res.status(200).json(product);
+    } catch (error) {
+        return res.status(500).json({ error: "Errore durante il recupero del singolo prodotto." });
+    }
+}
+*/

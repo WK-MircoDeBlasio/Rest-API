@@ -44,7 +44,8 @@ export async function create(productData: Product): Promise<SavedProduct> {
         id: id,
         code: productData.code,
         description: productData.description,
-        netweight: productData.netweight
+        netweight: productData.netweight,
+        default_value: false
     };
 
     products[id] = newProduct;

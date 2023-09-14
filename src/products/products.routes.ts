@@ -39,6 +39,13 @@ export default class ProductRoutes extends CommonRoutesConfig {
             )
             .get(Products.findAll)
 
+        /*
+        this.app.route(this.apiPrefix + "/MaxWeight")
+            .get(
+                Products.findMax
+            )
+        */
+
         return this.app;
     }
 }

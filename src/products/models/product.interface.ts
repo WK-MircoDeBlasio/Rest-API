@@ -1,7 +1,8 @@
 export interface Product {
     code: string,
     description: string,
-    netweight: number
+    netweight: number,
+    default_value: boolean
 }
 
 export interface SavedProduct extends Product {
